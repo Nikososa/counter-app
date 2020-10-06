@@ -5,11 +5,13 @@ import { shallow } from 'enzyme';
 
 describe('Pruebas en CounterApp', () => {
     
-    let wrapper = shallow( <CounterApp /> );
+    const value = 10 
+
+    let wrapper = shallow( <CounterApp value={value} /> );
 
     beforeEach( () => {
 
-        wrapper = shallow( <CounterApp /> );
+        wrapper = shallow( <CounterApp value={value} /> );
 
     });
 
